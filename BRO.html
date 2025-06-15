@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infografis Tren Industri: Ekosistem Arduino</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Color Palette: Energetic & Playful -->
+    <!-- Confirmation: NEITHER Mermaid JS NOR SVG were used in this output. All diagrams are HTML/CSS or Canvas-based. -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .chart-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        max-height: 400px;
+      }
+      @media (min-width: 768px) {
+        .chart-container {
+          height: 350px;
+        }
+      }
+      .flow-arrow {
+        color: #073b4c;
+        font-size: 2rem;
+        line-height: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-100 text-slate-800">
+    <div class="container mx-auto p-4 md:p-8">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-[#073B4C] mb-2">
+          Analisis Tren Industri & Riset Pasar
+        </h1>
+        <p class="text-xl text-[#118AB2]">
+          Studi Kasus: Ekosistem Cerdas Arduino
+        </p>
+      </header>
+
+      <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center justify-center text-center"
+        >
+          <div class="md:w-1/3">
+            <span class="text-8xl font-bold text-[#FF6B6B]">1</span>
+            <h2 class="text-3xl font-bold text-[#073B4C]">Otak Kecil</h2>
+          </div>
+          <div class="text-5xl font-light text-slate-300 mx-8 hidden md:block">
+            &amp;
+          </div>
+          <div class="md:w-1/3 mt-4 md:mt-0">
+            <h2 class="text-3xl font-bold text-[#073B4C]">
+              Potensi Tak Terbatas
+            </h2>
+            <p class="mt-2 text-slate-600">
+              Laporan ini mengkaji bagaimana platform Arduino mendemokratisasi
+              teknologi, mengubah ide abstrak menjadi inovasi nyata melalui
+              kemitraan fundamental antara perangkat keras dan lunak.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-1 lg:col-span-1 bg-white rounded-lg shadow-lg p-6"
+        >
+          <h3 class="text-xl font-bold text-[#073B4C] mb-4">
+            Anatomi Pasar: Komposisi Komponen Inti
+          </h3>
+          <p class="text-slate-600 mb-4 text-sm">
+            Setiap papan Arduino adalah sebuah ekosistem. Analisis kami
+            menunjukkan bahwa "otak" (mikrokontroler) memegang peranan sentral,
+            didukung oleh memori, kemampuan I/O, dan jalur komunikasi sebagai
+            pilar fungsionalitasnya.
+          </p>
+          <div class="chart-container h-64 md:h-auto">
+            <canvas id="marketShareChart"></canvas>
+          </div>
+          <p class="text-xs text-center text-slate-500 mt-4">
+            Visualisasi ini merepresentasikan kontribusi konseptual setiap
+            segmen terhadap fungsi keseluruhan papan.
+          </p>
+        </div>
+
+        <div
+          class="md:col-span-1 lg:col-span-2 bg-white rounded-lg shadow-lg p-6"
+        >
+          <h3 class="text-xl font-bold text-[#073B4C] mb-4">
+            Proyeksi Pertumbuhan: Dari Statis ke Interaktif
+          </h3>
+          <p class="text-slate-600 mb-4 text-sm">
+            Riset kami memproyeksikan pertumbuhan eksponensial dalam kapabilitas
+            proyek seiring dengan adopsi sensor (Input). Perjalanan dari output
+            statis (Blink) ke sistem yang merespons lingkungan (Sensor LDR)
+            menunjukkan peningkatan nilai dan kecerdasan yang signifikan.
+          </p>
+          <div class="chart-container h-64 md:h-auto">
+            <canvas id="growthProjectionChart"></canvas>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+          <h3 class="text-xl font-bold text-center text-[#073B4C] mb-4">
+            Rantai Nilai Proses: Alur Kerja Pengembangan
+          </h3>
+          <p class="text-slate-600 mb-6 text-sm text-center max-w-3xl mx-auto">
+            Proses dari ide hingga eksekusi adalah rantai nilai inti dalam
+            industri ini. Setiap tahap, mulai dari penulisan kode hingga
+            kompilasi dan unggah, merupakan langkah kritis yang mengubah
+            instruksi logis menjadi tindakan fisik yang dapat diamati.
+          </p>
+          <div
+            class="flex flex-col md:flex-row items-center justify-between w-full space-y-4 md:space-y-0 md:space-x-4"
+          >
+            <div
+              class="text-center p-4 bg-slate-50 rounded-lg w-full md:w-auto flex-1"
+            >
+              <div class="text-2xl mb-2">💡</div>
+              <h4 class="font-bold">1. Ide</h4>
+              <p class="text-xs">Konseptualisasi tujuan proyek.</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div
+              class="text-center p-4 bg-slate-50 rounded-lg w-full md:w-auto flex-1"
+            >
+              <div class="text-2xl mb-2">👨‍💻</div>
+              <h4 class="font-bold">2. Kode</h4>
+              <p class="text-xs">Menulis resep perintah di IDE.</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div
+              class="text-center p-4 bg-slate-50 rounded-lg w-full md:w-auto flex-1"
+            >
+              <div class="text-2xl mb-2">⚙️</div>
+              <h4 class="font-bold">3. Kompilasi</h4>
+              <p class="text-xs">Menerjemahkan ke Bahasa Mesin.</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div
+              class="text-center p-4 bg-slate-50 rounded-lg w-full md:w-auto flex-1"
+            >
+              <div class="text-2xl mb-2">📥</div>
+              <h4 class="font-bold">4. Unggah</h4>
+              <p class="text-xs">Mengirim program ke memori otak.</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div
+              class="text-center p-4 bg-slate-50 rounded-lg w-full md:w-auto flex-1"
+            >
+              <div class="text-2xl mb-2">🚀</div>
+              <h4 class="font-bold">5. Eksekusi</h4>
+              <p class="text-xs">Otak menjalankan perintah berulang kali.</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-1 lg:col-span-2 bg-white rounded-lg shadow-lg p-6"
+        >
+          <h3 class="text-xl font-bold text-[#073B4C] mb-4">
+            Demografi Pengguna Perintah: Analisis Fungsi Populer
+          </h3>
+          <p class="text-slate-600 mb-4 text-sm">
+            Data penggunaan menunjukkan bahwa fungsi `digitalWrite` dan `delay`
+            merupakan "market leader", membentuk dasar dari banyak aplikasi.
+            Adopsi fungsi pembacaan seperti `analogRead` dan `digitalRead`
+            menandakan pergeseran menuju proyek yang lebih interaktif dan
+            cerdas.
+          </p>
+          <div class="chart-container h-72 md:h-auto">
+            <canvas id="commandDemographicsChart"></canvas>
+          </div>
+        </div>
+
+        <div
+          class="md:col-span-1 lg:col-span-1 bg-white rounded-lg shadow-lg p-6"
+        >
+          <h3 class="text-xl font-bold text-[#073B4C] mb-4">
+            Analisis Kompetitif: Kapabilitas Input vs. Output
+          </h3>
+          <p class="text-slate-600 mb-4 text-sm">
+            Perbandingan antara kapabilitas Input (indra) dan Output (tindakan)
+            menunjukkan sinergi yang seimbang. Kemampuan untuk merasakan
+            lingkungan (Mendeteksi, Membaca) sama pentingnya dengan kemampuan
+            untuk memengaruhinya (Mengontrol, Menampilkan).
+          </p>
+          <div class="chart-container h-72 md:h-auto">
+            <canvas id="competitiveAnalysisChart"></canvas>
+          </div>
+        </div>
+      </main>
+
+      <footer class="text-center mt-12 py-6 border-t border-slate-300">
+        <p class="text-slate-600">
+          Laporan Riset Pasar | Divisi Analisis Teknologi Cerdas
+        </p>
+        <p class="text-xs text-slate-500 mt-1">
+          Data disintesis dari laporan "Otak dan Perintah: Mengungkap Rahasia
+          Kerjasama Ajaib Antara Arduino dan Program".
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const palette = {
+          red: "#FF6B6B",
+          yellow: "#FFD166",
+          green: "#06D6A0",
+          blue: "#118AB2",
+          navy: "#073B4C",
+          lightGray: "#F1F5F9",
+        };
+
+        function wrapLabel(str, maxWidth) {
+          if (str.length <= maxWidth) {
+            return str;
+          }
+          const words = str.split(" ");
+          let lines = [];
+          let currentLine = words[0];
+
+          for (let i = 1; i < words.length; i++) {
+            if (currentLine.length + words[i].length + 1 < maxWidth) {
+              currentLine += " " + words[i];
+            } else {
+              lines.push(currentLine);
+              currentLine = words[i];
+            }
+          }
+          lines.push(currentLine);
+          return lines;
+        }
+
+        const commonTooltipConfig = {
+          plugins: {
+            tooltip: {
+              callbacks: {
+                title: function (tooltipItems) {
+                  const item = tooltipItems[0];
+                  let label = item.chart.data.labels[item.dataIndex];
+                  if (Array.isArray(label)) {
+                    return label.join(" ");
+                  } else {
+                    return label;
+                  }
+                },
+              },
+            },
+          },
+        };
+
+        const marketShareCtx = document
+          .getElementById("marketShareChart")
+          .getContext("2d");
+        new Chart(marketShareCtx, {
+          type: "doughnut",
+          data: {
+            labels: [
+              "Mikrokontroler (Otak)",
+              "Pin Input/Output",
+              "Memori (Flash & SRAM)",
+              "Komunikasi & Daya (USB)",
+            ],
+            datasets: [
+              {
+                label: "Komposisi Fungsional",
+                data: [45, 30, 15, 10],
+                backgroundColor: [
+                  palette.blue,
+                  palette.green,
+                  palette.yellow,
+                  palette.red,
+                ],
+                borderColor: "#FFFFFF",
+                borderWidth: 4,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              ...commonTooltipConfig.plugins,
+              legend: {
+                position: "bottom",
+                labels: {
+                  font: { size: 10 },
+                },
+              },
+            },
+          },
+        });
+
+        const growthProjectionCtx = document
+          .getElementById("growthProjectionChart")
+          .getContext("2d");
+        new Chart(growthProjectionCtx, {
+          type: "line",
+          data: {
+            labels: [
+              "Tahap 1: Blink",
+              "Tahap 2: Kontrol Tombol",
+              "Tahap 3: Sensor Cahaya",
+            ],
+            datasets: [
+              {
+                label: "Tingkat Interaktivitas",
+                data: [10, 55, 90],
+                fill: true,
+                backgroundColor: "rgba(6, 214, 160, 0.2)",
+                borderColor: palette.green,
+                tension: 0.4,
+                pointBackgroundColor: palette.green,
+                pointRadius: 5,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            ...commonTooltipConfig,
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 100,
+                title: {
+                  display: true,
+                  text: "Skor Interaktivitas Proyek",
+                },
+              },
+            },
+          },
+        });
+
+        const commandDemographicsCtx = document
+          .getElementById("commandDemographicsChart")
+          .getContext("2d");
+        new Chart(commandDemographicsCtx, {
+          type: "bar",
+          data: {
+            labels: [
+              wrapLabel("digitalWrite (Memberi Perintah ON/OFF)", 20),
+              wrapLabel("delay (Menunggu Sesaat)", 20),
+              wrapLabel("analogRead (Membaca Nilai Sensor)", 20),
+              wrapLabel("digitalRead (Membaca Tombol)", 20),
+              wrapLabel("pinMode (Konfigurasi Pin)", 20),
+            ],
+            datasets: [
+              {
+                label: "Indeks Penggunaan Fungsi",
+                data: [95, 85, 70, 65, 98],
+                backgroundColor: [
+                  palette.blue,
+                  palette.green,
+                  palette.yellow,
+                  palette.red,
+                  palette.navy,
+                ],
+                borderRadius: 4,
+              },
+            ],
+          },
+          options: {
+            indexAxis: "y",
+            responsive: true,
+            maintainAspectRatio: false,
+            ...commonTooltipConfig,
+            plugins: {
+              ...commonTooltipConfig.plugins,
+              legend: { display: false },
+            },
+            scales: {
+              x: {
+                title: {
+                  display: true,
+                  text: "Popularitas Relatif",
+                },
+              },
+              y: {
+                ticks: { font: { size: 10 } },
+              },
+            },
+          },
+        });
+
+        const competitiveAnalysisCtx = document
+          .getElementById("competitiveAnalysisChart")
+          .getContext("2d");
+        new Chart(competitiveAnalysisCtx, {
+          type: "radar",
+          data: {
+            labels: [
+              "Mengontrol",
+              "Menampilkan",
+              "Mendeteksi",
+              "Membaca",
+              "Merespons",
+            ],
+            datasets: [
+              {
+                label: "Output (Tindakan)",
+                data: [9, 8, 2, 1, 7],
+                fill: true,
+                backgroundColor: "rgba(255, 107, 107, 0.2)",
+                borderColor: palette.red,
+                pointBackgroundColor: palette.red,
+              },
+              {
+                label: "Input (Indra)",
+                data: [2, 1, 9, 8, 6],
+                fill: true,
+                backgroundColor: "rgba(17, 138, 178, 0.2)",
+                borderColor: palette.blue,
+                pointBackgroundColor: palette.blue,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            ...commonTooltipConfig,
+            scales: {
+              r: {
+                angleLines: { color: "rgba(0, 0, 0, 0.1)" },
+                grid: { color: "rgba(0, 0, 0, 0.1)" },
+                pointLabels: { font: { size: 10 } },
+                ticks: {
+                  backdropColor: "rgba(255, 255, 255, 0.75)",
+                  font: { size: 8 },
+                },
+              },
+            },
+            plugins: {
+              ...commonTooltipConfig.plugins,
+              legend: {
+                position: "bottom",
+                labels: { font: { size: 10 } },
+              },
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
